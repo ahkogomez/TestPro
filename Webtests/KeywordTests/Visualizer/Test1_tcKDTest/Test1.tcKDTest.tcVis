@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{42D2222C-ACA2-405F-8E67-05D5C42EB839}" version="2">
+	<data key="{34D13BD1-1260-48E8-BFF3-C4398716428D}">
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="2" kind="0" dateTime="43647.0840277778" objectName="Aliases.browser.pageGioLifeProtect.formQuotedetails.panel.fieldset.selectApplicantdetailsDateofbirt" objectLeft="227" objectTop="319" objectRight="323" objectBottom="360" clickPointX="308" clickPointY="345" imageFileName="tcvi528311890167960.png" storageFileName="" needUpdate="False" rectColor="255" />
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="3" kind="0" dateTime="43647.0840856481" objectName="Aliases.browser.pageGioLifeProtect.formQuotedetails.panel.fieldset.selectApplicantdetailsDateofbirt2" objectLeft="323" objectTop="319" objectRight="451" objectBottom="360" clickPointX="449" clickPointY="340" imageFileName="tcvi528317125167961.png" storageFileName="" needUpdate="False" rectColor="255" />
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="4" kind="0" dateTime="43647.0841435185" objectName="Aliases.browser.pageGioLifeProtect.formQuotedetails.panel.fieldset.selectApplicantdetailsDateofbirt3" objectLeft="451" objectTop="319" objectRight="547" objectBottom="360" clickPointX="540" clickPointY="336" imageFileName="tcvi528321703167962.png" storageFileName="" needUpdate="False" rectColor="255" />
+	</data>
+</Root>

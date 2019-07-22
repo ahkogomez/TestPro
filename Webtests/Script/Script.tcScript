@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<child name="SimpleGIO" key="{12766C3B-802D-466A-BE05-D682AD369B30}" path="SimpleGIO.js" />
+		<child name="Formy" key="{DB112AEB-7127-4232-951D-CC9D9FF60251}" path="Formy.js" />
+		<child name="TestGIOLife" key="{BF2A5F7B-D8CC-42C4-8526-A1567329FD16}" path="TestGIOLife.js" />
+		<child name="AddToCart" key="{09EE7E85-83AA-4014-90D5-83C7B4DFBE26}" path="AddToCart.js" />
+		<child name="TeaShop" key="{086EE549-ACA1-48AA-9871-68F545A11261}" path="TeaShop.js" />
+		<child name="Common" key="{2448BE81-85BF-4433-9CDF-9D18C2FFCB96}" path="Common.js" />
+		<child name="datadriver" key="{0B7037E0-38A9-497C-B2CA-561008A78AC6}" path="datadriver.js" />
+		<child name="EventControl1_OnStartTest" key="{8EEFE2C1-E858-4B39-9DBF-05E873AB404B}" path="EventControl1_OnStartTest.js" />
+		<child name="EventControl1_OnStopTest" key="{F9E71921-40BD-4A9A-B6E1-1D9BA3790854}" path="EventControl1_OnStopTest.js" />
+	</children>
+</Root>
