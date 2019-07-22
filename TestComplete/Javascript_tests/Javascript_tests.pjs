@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="14.0" key="{54E8DDA3-EA9D-4D69-96B6-93F61B4449EC}">
+	<children>
+		<child name="DesktopApps" key="{FE4F0625-CDCC-4BE2-BDBC-C28CA3396ADA}" path="DesktopApps\DesktopApps.mds" />
+		<child name="TeaShop" key="{9A7CF612-C62E-415A-A476-20AA95B5C257}" path="TeaShop\TeaShop.mds" />
+	</children>
+	<testItems key="{E24DCE47-D9C8-4784-B7C2-F878ECEAC3F1}">
+		<children>
+			<testItem key="{FE4F0625-CDCC-4BE2-BDBC-C28CA3396ADA}" enabled="True" timeout="0" stopOnError="True" description="" />
+			<testItem key="{9A7CF612-C62E-415A-A476-20AA95B5C257}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{F240557E-1E32-465B-A596-EEEDA5D793E0}">
+		<data Version="3" />
+	</variables>
+	<analysis key="{3E021463-17D1-4E37-8628-5674179BA071}" />
+	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
+		<data />
+	</scc>
+	<extender key="{1A3FC97E-9A66-4716-B166-35D10B4146E0}">
+		<CrossBrowserTesting Enable="True" />
+	</extender>
+</Root>

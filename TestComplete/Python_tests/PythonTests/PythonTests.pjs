@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="14.0" key="{97487CB9-8B18-4C25-A765-26561B3DEAA4}">
+	<children>
+		<child name="PyWebsiteTests" key="{DC36A4D2-0C5C-4BAD-A285-98CD2BA61706}" path="PyWebsiteTests\PyWebsiteTests.mds" />
+	</children>
+	<testItems key="{4781710B-0329-48AF-B2B4-1D8EB3176E45}">
+		<children>
+			<testItem key="{DC36A4D2-0C5C-4BAD-A285-98CD2BA61706}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{E4B46963-21E2-4D04-A098-589079F57C0D}">
+		<data Version="3" />
+	</variables>
+	<analysis key="{F538352D-05F9-4366-9325-7CEDF494E5B9}" />
+	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
+		<data />
+	</scc>
+	<extender key="{1A3FC97E-9A66-4716-B166-35D10B4146E0}">
+		<CrossBrowserTesting Enable="True" />
+	</extender>
+</Root>
