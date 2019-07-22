@@ -1,4 +1,0 @@
-product,quantity,date,name,street,city,state,zip,cardtype,cardnum,expdate
-ScreenSaver,10,1/02/2016,Mary Poppins,Davis Road,Marayong,NSW,2148,Visa,1.23457E+15,2/02/2020
-FamilyAlbum,20,08/29/2018,Angelica Carmichael,Tavistock Road,Homebush West,NSW,2140,Mastercard,1.11111E+15,3/03/2022
-MyMoney,5,06/26/2019,Tommy Troy,George St.,Sydney,NSW,2000,AE,5.55556E+15,5/05/2023

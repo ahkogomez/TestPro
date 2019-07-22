@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Root signature="{70FC6ED0-A122-4A26-9B64-EDDBB2F11A49}" version="14.0">
-	<children>
-		<child name="OrdersView" key="{E305D1CA-75C5-4D34-BE83-388D18940828}" path="OrdersView.tcTbl" />
-		<child name="OrdersView1" key="{697B0AD5-3037-49BA-868A-8E646E2DE49F}" path="OrdersView1.tcTbl" />
-	</children>
-</Root>

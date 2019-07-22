@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
-	<children>
-		<child name="OrdersApp" key="{3BC95D35-9487-462F-ADD5-2DDCA3E5A02D}" path="OrdersApp.js" />
-		<child name="UnexpectedWindowHandler" key="{144D250C-6972-45D7-93F5-0BE9DC77737F}" path="UnexpectedWindowHandler.js" />
-	</children>
-</Root>

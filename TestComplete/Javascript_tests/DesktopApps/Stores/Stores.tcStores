@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Root signature="{5238AF17-5FE2-48FF-8BCC-9803A975A4F4}" version="14.0">
-	<children>
-		<child name="Tables" key="{09006AED-35B8-4CE3-98C3-F0E66B4354DD}" type="Tables" typeId="{70FC6ED0-A122-4A26-9B64-EDDBB2F11A49}" pluginName="Stores" path="Tables\Tables.tcTbls" />
-	</children>
-</Root>
