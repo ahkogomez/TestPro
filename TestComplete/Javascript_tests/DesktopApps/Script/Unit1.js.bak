@@ -1,0 +1,26 @@
+﻿function Main()
+{
+  let process = TestedApps.Orders.Run();
+  w = Sys.Process("Orders").WinFormsObject("MainForm");
+  w.MainMenu.Click("Orders|New order...")
+  orderform = Sys.Process("Orders").WinFormsObject("OrderForm").WinFormsObject("Group")
+  orderform.WinFormsObject("ProductNames").ClickItem("ScreenSaver");
+  orderform.WinFormsObject("Quantity").set_Text("10");
+  orderform.WinFormsObject("Date").set_Text("05/12/2018");
+  orderform.WinFormsObject("Customer").set_Text("Akokoko");
+  orderform.WinFormsObject("Street").set_Text("George St."); 
+  orderform.WinFormsObject("City").set_Text("Melbourne"); 
+  orderform.WinFormsObject("State").set_Text("VIC");
+  orderform.WinFormsObject("Zip").set_Text("1243");
+  orderform.WinFormsObject("Visa").Click(); //Mastercard or AE
+  orderform.WinFormsObject("CardNo").set_Text("1234567812345678");
+  orderform.WinFormsObject("ExpDate").set_Text("02/02/22");
+  
+  //check
+  Log.Message(orderform.WinFormsObject("Price").wText);
+  Log.Message(orderform.WinFormsObject("Discount").wText);
+  Log.Message(orderform.WinFormsObject("groupBox1").WinFormsObject("Total").wText);
+  
+  //
+  orderform.WinFormsObject("ButtonOK").Click();
+}

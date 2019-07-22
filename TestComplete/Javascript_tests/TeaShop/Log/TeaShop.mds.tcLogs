@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="folders"/>
+		<Node name="logs">
+			<Node name="log idx=0000">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="43664.3602844329"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{D52601FB-D6A1-467E-BB1D-4547750C4AFF}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [NavigateShop\NavigateShop]"/>
+				<Prp name="relpath" type="S" value="18_07_2019_8_38 AM_48_575\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="43664.3665457292"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{3E94A72D-508D-4313-9E18-B7AF16B9F103}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [NavigateShop\NavigateShop]"/>
+				<Prp name="relpath" type="S" value="18_07_2019_8_47 AM_49_551\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+		</Node>
+		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
+		<Prp name="version" type="S" value="11.0"/>
+	</Node>
+</Nodes>

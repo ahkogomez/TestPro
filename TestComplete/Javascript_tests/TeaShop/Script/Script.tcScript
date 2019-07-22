@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<child name="NavigateShop" key="{3A4DBA39-EED4-450E-BEC0-A46F476E99F6}" path="NavigateShop.js" />
+		<child name="Handler" key="{9BD46173-A1A3-45E9-87B0-149DB6ECCDCC}" path="Handler.js" />
+		<child name="Common" key="{CDB752ED-7899-4418-8818-CA6DD0446C03}" path="Common.js" />
+		<child name="datadriver" key="{94219010-2D6F-455E-9898-0CCF8DFA268A}" path="datadriver.js" />
+	</children>
+</Root>
