@@ -1,0 +1,8 @@
+﻿def EventControl1_OnStopTest(Sender):
+  CONST_INPUT = "Input";
+  Log.Message("Stop")
+
+  if (Project.Variables.VariableExists(INPUT)) {
+     Project.Variables.RemoveVariable(INPUT);
+  }
+}

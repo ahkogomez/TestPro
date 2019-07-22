@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<child name="PyFormy" key="{B23C8233-1E46-41B0-ACF6-241A194C81B6}" path="PyFormy.py" />
+		<child name="EventControl1_OnStartTest" key="{CADBBA30-9495-49A2-9707-C6454A400F3A}" path="EventControl1_OnStartTest.py" />
+		<child name="EventControl1_OnStopTest" key="{E61C5691-1E67-4464-BB43-7F3B033E0307}" path="EventControl1_OnStopTest.py" />
+	</children>
+</Root>
