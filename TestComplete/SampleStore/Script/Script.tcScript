@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<folder name="Resources">
+			<child name="Common" key="{68674F30-D340-410B-8F52-4265929D3D46}" path="Resources\Common.js" />
+			<child name="DataDriver" key="{CF4D6DD7-A01E-4E55-B7BC-99CD106F4FE4}" path="Resources\DataDriver.js" />
+			<child name="Handler" key="{755F046E-04A2-4B0A-AB10-3166BA268EE1}" path="Resources\Handler.js" />
+		</folder>
+		<child name="Browser" key="{BAB64136-5526-4652-8FD6-D75997B81B6C}" path="Browser.js" />
+		<child name="Login" key="{D9304F72-BFAF-424D-9E53-75C8770658AD}" path="Login.js" />
+	</children>
+</Root>

@@ -1,0 +1,5 @@
+email,password,errortype
+{BLANK},password,no email
+ahko@test,password,inv email
+agomez@testpro.com.au,{BLANK},no pwd
+agomez@testpro.com.au,password1,wrong cred
