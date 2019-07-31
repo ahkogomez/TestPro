@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="14.0" key="{C44CED69-57B1-4718-A160-D18DD5B4CB59}">
+	<children />
+	<testItems key="{565C450F-C8A0-43FD-8708-0FB861B4639A}">
+		<children />
+	</testItems>
+	<variables key="{8490AFCC-3102-407D-A441-D3A8CB72E78F}">
+		<data Version="3" />
+	</variables>
+	<analysis key="{31920551-5898-4B13-AC0D-DF34727F0536}" />
+	<scc key="{C900492B-D218-429C-9AA0-264B7D78CA88}" name="Git Plugin">
+		<data />
+	</scc>
+	<extender key="{1A3FC97E-9A66-4716-B166-35D10B4146E0}">
+		<CrossBrowserTesting Enable="True" />
+	</extender>
+</Root>

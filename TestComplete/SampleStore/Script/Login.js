@@ -1,8 +1,8 @@
 ﻿var common = require("Common");
 var datadriver = require("DataDriver");
-
+var datafolder = "D:\\TestProScripts\\TestComplete\\SampleStore\\testdata\\"
 function TCValidLogin(){
-  driver = datadriver.getData("D:\\TestComplete\\SampleStore\\testdata\\validcred.xlsx", sheet="Sheet1");
+  driver = datadriver.getData(datafolder+"validcred.xlsx", sheet="valid");
   //driver = datadriver.getData("D:\\TestComplete\\SampleStore\\testdata\\csv_validcred.csv");
   while(!driver.EOF()){
     InputCredentials(driver.Value("email"), driver.Value("password"));
@@ -13,7 +13,7 @@ function TCValidLogin(){
 }
 
 function TCInvalidLogin(){
-  driver = datadriver.getData("D:\\TestComplete\\SampleStore\\testdata\\invalidcred.xlsx", sheet="Sheet1");
+  driver = datadriver.getData(datafolder+"invalidcreds.xlsx", sheet="Sheet1");
   //driver = datadriver.getData("D:\\TestComplete\\SampleStore\\testdata\\csv_invalidcreds.csv");
   while(!driver.EOF()){
     InputCredentials(driver.Value("email"), driver.Value("password"));
