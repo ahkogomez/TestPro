@@ -7,5 +7,6 @@
 		<child name="Handler" key="{24DBEF91-AFD6-47C7-954A-0B5A405B1424}" path="..\..\..\..\SampleStore\Script\Resources\Handler.js" />
 		<child name="Browser" key="{AB444817-5D24-4F94-B94A-C29112207A11}" path="..\..\..\..\SampleStore\Script\Browser.js" />
 		<child name="Login" key="{C233930D-B223-4A07-976E-69DF80C097FD}" path="..\..\..\..\SampleStore\Script\Login.js" />
+		<child name="FailandStop" key="{A7DE6AE7-5AA5-4B66-AB83-A64792742002}" path="FailandStop.js" />
 	</children>
 </Root>
