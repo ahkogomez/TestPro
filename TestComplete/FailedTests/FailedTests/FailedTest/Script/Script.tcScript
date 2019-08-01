@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<child name="FailandRecover" key="{BA3DDCE9-7BF9-4064-B1BD-520D58CBAA87}" path="FailandRecover.js" />
+		<child name="Common" key="{70EA2798-9130-40DC-B58D-085CAA2FFDFE}" path="..\..\..\..\SampleStore\Script\Resources\Common.js" />
+		<child name="DataDriver" key="{AE0CAAA5-5494-4F4B-9A0B-C4980C4EA58E}" path="..\..\..\..\SampleStore\Script\Resources\DataDriver.js" />
+		<child name="Handler" key="{24DBEF91-AFD6-47C7-954A-0B5A405B1424}" path="..\..\..\..\SampleStore\Script\Resources\Handler.js" />
+		<child name="Browser" key="{AB444817-5D24-4F94-B94A-C29112207A11}" path="..\..\..\..\SampleStore\Script\Browser.js" />
+		<child name="Login" key="{C233930D-B223-4A07-976E-69DF80C097FD}" path="..\..\..\..\SampleStore\Script\Login.js" />
+	</children>
+</Root>

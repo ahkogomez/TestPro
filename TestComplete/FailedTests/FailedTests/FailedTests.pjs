@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="14.0" key="{C44CED69-57B1-4718-A160-D18DD5B4CB59}">
-	<children />
+	<children>
+		<child name="FailedTest" key="{265158BE-D021-451A-A9A8-07D85C7BA84F}" path="FailedTest\FailedTest.mds" />
+	</children>
 	<testItems key="{565C450F-C8A0-43FD-8708-0FB861B4639A}">
-		<children />
+		<children>
+			<testItem key="{265158BE-D021-451A-A9A8-07D85C7BA84F}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
 	</testItems>
 	<variables key="{8490AFCC-3102-407D-A441-D3A8CB72E78F}">
 		<data Version="3" />
