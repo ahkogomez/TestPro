@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="14.0" key="{720774AF-155B-4A1E-B143-F990A15C17F9}">
+	<children>
+		<child name="Desktop_App" key="{645DA7F5-54D9-4145-81F6-381176E9B5FB}" path="Desktop_App.mds" />
+	</children>
+	<testItems key="{DDBED89C-89B2-458D-980D-2973064F2552}">
+		<children>
+			<testItem key="{645DA7F5-54D9-4145-81F6-381176E9B5FB}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{1BF0B54A-ED12-4829-A5C5-F50F9C399133}">
+		<data Version="3" />
+	</variables>
+	<analysis key="{B6F7781E-47F5-471D-A939-63B220EB3A75}" />
+	<scc key="{C900492B-D218-429C-9AA0-264B7D78CA88}" name="Git Plugin">
+		<data />
+	</scc>
+	<extender key="{1A3FC97E-9A66-4716-B166-35D10B4146E0}">
+		<CrossBrowserTesting Enable="True" />
+	</extender>
+</Root>

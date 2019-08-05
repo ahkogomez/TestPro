@@ -1,8 +1,9 @@
-set resultsdir=D:\TestComplete\SampleStore\Results\Valid
+set resultsdir=D:\TestProScripts\TestComplete\SampleStore\Results\Valid
+set projectdir=D:\TestProScripts\TestComplete\SampleStore
 
 rmdir /s %resultsdir% /q
 
-testcomplete.exe "D:\TestComplete\SampleStore.pjs" /run /project:SampleStore /test:"Login Valid with data" "Data=D:\TestComplete\SampleStore\testdata\validcred.xlsx" "Sheet=valid" /SilentMode /ExportLog:"%resultsdir%\Log1.html" /exit
+testcomplete.exe "%projectdir%\SampleStore.pjs" /run /project:SampleStore /test:"Login Valid with data" "Data=%projectdir%\testdata\validcred.xlsx" "Sheet=valid" /SilentMode /ExportLog:"%resultsdir%\Log1.html" /exit
 
 start chrome %resultsdir%\Log1.html
 

@@ -1,0 +1,4 @@
+product,quantity,date,name,street,city,state,zip,cardtype,cardnum,expdate
+ScreenSaver,10,1/02/2016,Haley,Davis Road,Marayong,NSW,2148,Visa,1234567890123456,2/02/2020
+FamilyAlbum,20,08/29/2018,Adam,Tavistock Road,Homebush West,NSW,2140,Mastercard,1111111111111111,3/03/2022
+MyMoney,5,06/26/2019,Michael,George St.,Sydney,NSW,2000,AE,5555555555555555,5/05/2023
