@@ -43,15 +43,15 @@
 			<testItem name="Login Valid with data" key="{F5E6257E-12FF-4180-9444-865B5669B9C8}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 				<testParameters />
 				<children>
-					<testItem name="OpenStore" key="{D968F89C-F403-4DD4-B3F2-A10BC0FFCF46}" group="False" enabled="True" testMoniker="{BAB64136-5526-4652-8FD6-D75997B81B6C}OpenStore" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="OpenStore" key="{D968F89C-F403-4DD4-B3F2-A10BC0FFCF46}" group="False" enabled="True" testMoniker="{BAB64136-5526-4652-8FD6-D75997B81B6C}OpenStore" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="Login to signout" key="{5E99558B-5E18-4D00-A3EC-EA7A47355418}" group="False" enabled="True" testMoniker="{D9304F72-BFAF-424D-9E53-75C8770658AD}TCValidLogin" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="Login to signout" key="{5E99558B-5E18-4D00-A3EC-EA7A47355418}" group="False" enabled="True" testMoniker="{D9304F72-BFAF-424D-9E53-75C8770658AD}TCValidLogin" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="CloseBrowser" key="{C36E8AFA-C640-4625-BB10-777670494CD0}" group="False" enabled="True" testMoniker="{BAB64136-5526-4652-8FD6-D75997B81B6C}CloseStore" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="CloseBrowser" key="{C36E8AFA-C640-4625-BB10-777670494CD0}" group="False" enabled="True" testMoniker="{BAB64136-5526-4652-8FD6-D75997B81B6C}CloseStore" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<children />
 					</testItem>
@@ -592,7 +592,7 @@
 		<setting name="Playback_Runtime_AutoWaitTimeout" type="2" value="50" />
 		<setting name="Playback_Runtime_DelayBetweenEvents" type="2" value="50" />
 		<setting name="Playback_Runtime_DisableMouse" type="1" value="False" />
-		<setting name="Playback_Runtime_MinimizeBeforePlayback" type="1" value="False" />
+		<setting name="Playback_Runtime_MinimizeBeforePlayback" type="1" value="True" />
 		<setting name="Playback_Runtime_UseCaseSensitiveParameters" type="1" value="False" />
 		<setting name="Playback_StopOnError" type="1" value="False" />
 		<setting name="Playback_StopOnObjectRecognitionError" type="1" value="False" />

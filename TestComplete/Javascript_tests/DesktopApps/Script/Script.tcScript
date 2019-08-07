@@ -3,5 +3,8 @@
 	<children>
 		<child name="OrdersApp" key="{3BC95D35-9487-462F-ADD5-2DDCA3E5A02D}" path="OrdersApp.js" />
 		<child name="UnexpectedWindowHandler" key="{144D250C-6972-45D7-93F5-0BE9DC77737F}" path="UnexpectedWindowHandler.js" />
+		<child name="Common" key="{112DBABA-57F7-470E-9BEE-A338D5B5EDD1}" path="..\..\TeaShop\Script\Common.js" />
+		<child name="datadriver" key="{6B6960A1-742E-4BAF-9EAB-FB2932B0A336}" path="..\..\TeaShop\Script\datadriver.js" />
+		<child name="Handler" key="{06F73989-A1F3-4D3D-94EB-91884C6E9CF7}" path="..\..\TeaShop\Script\Handler.js" />
 	</children>
 </Root>

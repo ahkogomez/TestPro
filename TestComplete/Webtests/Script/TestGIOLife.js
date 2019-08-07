@@ -18,8 +18,8 @@ function saveQuotes(){
 }
 
 function verifyquotes(){
-  driver = getdata("D:\\TestComplete\\Webtests\\testdata\\testdata.csv");
-  var quotes = DDT.CSVDriver("D:\\TestComplete\\Webtests\\testdata\\GIOQuotes.csv");
+  driver = getdata("D:\\TestProScripts\\TestComplete\\Webtests\\testdata\\testdata.csv");
+  var quotes = DDT.CSVDriver("D:\\TestProScripts\\TestComplete\\Webtests\\testdata\\GIOQuotes.csv");
   while (!driver.EOF())
   {    var data = processrow(driver);
        
@@ -35,6 +35,22 @@ function verifyquotes(){
   CloseCSV();
 }
 
+function verifyquotessingle(){
+  driver = getdata("D:\\TestProScripts\\TestComplete\\Webtests\\testdata\\testdata.csv");
+  //var quotes = DDT.CSVDriver("D:\\TestProScripts\\TestComplete\\Webtests\\testdata\\GIOQuotes.csv");
+  while (!driver.EOF())
+  {    var data = processrow(driver);
+       
+       OpenURL("https://www.gio.com.au/personal-life-insurance/life-protection-insurance.html");
+       GoToLifeQuote();
+       FillForm(data);
+       checkquotes(driver);
+       CloseBrowser(); 
+       
+       driver.Next();
+  }
+  CloseCSV();
+}
 function getdata(filename){
   if(Project.Variables.Input != null){
     Log.Message("using command line argument")
@@ -102,8 +118,10 @@ function GoToLifeQuote(){
 }
 
 function FillForm(data){
+  aqUtils.Delay("3000");
   let page = Sys.Browser("*").Page("*");
   let cursor = page.EvaluateXPath("//div[@class='dod-section']//span[contains(text(),\'"+data.dod+"\')]");
+  Log.Message(data.dod);
   cursor[0].Click();
   cursor = page.EvaluateXPath("//select[contains(@id,'dateOfBirth_Days')]");
   cursor[0].ClickItem(data.birthday);
@@ -163,10 +181,15 @@ function checkquotes(quotes){
   while(y < 6){
       let coverid = "coverAmount_"+String(y/2);
       let premiumid = "premium_"+String(y/2);
-     
+      
+      let coverdata = "cover"+String((y/2)+1); //ex. cover1
+      let premiumdata = "premium"+String((y/2)+1); //ex. premium1
+      //check coveramount
       obj = page.NativeWebObject.Find("id", coverid, "div");
-      aqObject.CheckProperty(obj.FindChild("tagName","strong"), "contentText", cmpContains, addComma(quotes.Value(y)));
-      aqObject.CheckProperty(page.NativeWebObject.Find("id", premiumid, "strong"), "contentText", cmpEqual, quotes.Value(y+1));
+      aqObject.CheckProperty(obj.FindChild("tagName","strong"), "contentText", cmpContains, addComma(quotes.Value(coverdata)));
+      
+      //check premium amount
+      aqObject.CheckProperty(page.NativeWebObject.Find("id", premiumid, "strong"), "contentText", cmpEqual, quotes.Value(premiumdata));
       y = y+2;
   }
 
@@ -182,3 +205,12 @@ function CloseCSV(){
 
   DDT.CloseDriver(DDT.CurrentDriver.Name);
 }
+
+module.exports.OpenURL = OpenURL;
+module.exports.getdata = getdata;
+module.exports.GoToLifeQuote = GoToLifeQuote;
+module.exports.FillForm=FillForm;
+module.exports.checkquotes=checkquotes;
+module.exports.CloseBrowser=CloseBrowser; 
+module.exports.CloseCSV = CloseCSV;
+module.exports.processrow = processrow;

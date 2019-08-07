@@ -5,6 +5,9 @@ var datafolder = "D:\\TestProScripts\\TestComplete\\SampleStore\\testdata\\"
 function TCValidLogin(){
   driver = datadriver.getData(datafolder+"validcred.xlsx", sheet="valid");
   //driver = datadriver.getData("D:\\TestComplete\\SampleStore\\testdata\\csv_validcred.csv");
+  common.OpenURL("firefox", "http://automationpractice.com");
+  let page = Sys.Browser("*").Page("*");
+  aqObject.CheckProperty(page.contentDocument, "title", cmpEqual, "My Store");
   while(!driver.EOF()){
     InputCredentials(driver.Value("email"), driver.Value("password"));
     verifySuccess(driver.Value("accountname"));
@@ -16,6 +19,10 @@ function TCValidLogin(){
 function TCInvalidLogin(){
   driver = datadriver.getData(datafolder+"invalidcreds.xlsx", sheet="Sheet1");
   //driver = datadriver.getData("D:\\TestComplete\\SampleStore\\testdata\\csv_invalidcreds.csv");
+  common.OpenURL("firefox", "http://automationpractice.com");
+   let page = Sys.Browser("*").Page("*");
+  aqObject.CheckProperty(page.contentDocument, "title", cmpEqual, "My Store");
+  
   while(!driver.EOF()){
     InputCredentials(driver.Value("email"), driver.Value("password"));
     verifyWrongCredentials(driver.Value("errortype"));
@@ -24,18 +31,18 @@ function TCInvalidLogin(){
 }
 
 function InputCredentials(email, password){
-
-  Sys.Browser("*").Page("*").NativeWebObject.Find("class", "login", "a").Click();
+  let page = Sys.Browser("firefox").Page("*");
+  page.NativeWebObject.Find("class", "login", "a").Click();
   
   aqUtils.Delay(3000);
-  let page = Sys.Browser("*").Page("*");
+  page = Sys.Browser("firefox").Page("*");
   Log.Message(page.contentDocument.title);
   aqObject.CheckProperty(page.contentDocument, "title", cmpContains, "Login - My Store");
   
   //aqUtils.Delay(1000);
-  if (email == "{BLANK}") email = "";
+  if (email == "{BLANK}" || email == null) email = "";
   page.NativeWebObject.Find("id", "email", "input").setText(email);
-  if (password == "{BLANK}") password = "";
+  if (password == "{BLANK}" || email == null) password = "";
   page.NativeWebObject.Find("id", "passwd", "input").setText(password);
   
   page.NativeWebObject.Find("id", "SubmitLogin", "button").Click();
@@ -44,7 +51,7 @@ function InputCredentials(email, password){
 function verifySuccess(accntname){
   
   aqUtils.Delay(3000);
-  var page = Sys.Browser("*").Page("*");
+  var page = Sys.Browser("firefox").Page("*");
   Log.Message(page.contentDocument.title);
   aqObject.CheckProperty(page.contentDocument, "title", cmpContains, "My account - My Store");
   
@@ -57,14 +64,14 @@ function verifySuccess(accntname){
 }
 
 function signOut(){
-   var page = Sys.Browser("*").Page("*");
+   var page = Sys.Browser("firefox").Page("*");
    page.NativeWebObject.Find("class", "logout", "a").Click();
    aqUtils.Delay(3000);
 }
 
 function verifyWrongCredentials(errortype){
   aqUtils.Delay(3000);
-  var page = Sys.Browser("*").Page("*");
+  var page = Sys.Browser("firefox").Page("*");
 
   var alertbox = page.NativeWebObject.Find("class", "alert alert-danger", "div") 
   aqObject.CheckProperty(alertbox.FindChild("tagName", "p"), "contentText", cmpEqual , "There is 1 error");

@@ -5,7 +5,12 @@
 	<data />
 	<children>
 		<child key="{73AE323A-6C57-4409-B608-5F68956E6FD9}">
-			<config nodeName="EventControl1" lastOpenedTLB="" generatedCLSID="{00000000-0000-0000-0000-000000000000}" generatedTLBKey="{00000000-0000-0000-0000-000000000000}" generatedEventsKey="{00000000-0000-0000-0000-000000000000}" generatedTLBDesc="TestComplete EventControl1 Control - 10/07/2019 11:37:42 AM" />
+			<config nodeName="EventControl1" lastOpenedTLB="" generatedCLSID="{EA312E29-9416-467A-A4A1-617339A0BC0F}" generatedTLBKey="{250A1D6A-9241-44C7-A70C-1A1DCBF806A2}" generatedEventsKey="{AFB14417-16B2-4014-8F03-27186D667A41}" generatedTLBDesc="TestComplete EventControl1 Control - 10/07/2019 11:37:42 AM">
+				<eventInfo infoTLBVer="version.dll" infoGUID="{F5856842-4323-49FD-B806-36E22179EF8A}" infoID="1610743808" infoControlName="Test Engine Events" infoEventName="OnStartTest" infoEventRealName="OnStartTest" infoDescription="Occurs when TestComplete starts running a test (whether it is run from the UI or command line, or as a project test item)." />
+				<eventInfo infoTLBVer="version.dll" infoGUID="{F5856842-4323-49FD-B806-36E22179EF8A}" infoID="1610743809" infoControlName="Test Engine Events" infoEventName="OnStopTest" infoEventRealName="OnStopTest" infoDescription="Occurs when TestComplete stops running a test or when the execution of a test item is over." />
+				<handlerInfo handlerName="EventControl1_OnStopTest" handlerMoniker="{06F73989-A1F3-4D3D-94EB-91884C6E9CF7}EventControl1_OnStopTest" handlerEventName="OnStopTest" handlerRealIID="{F5856842-4323-49FD-B806-36E22179EF8A}" handlerRealDispID="1610743809" />
+				<handlerInfo handlerName="EventControl1_OnStartTest" handlerMoniker="{06F73989-A1F3-4D3D-94EB-91884C6E9CF7}EventControl1_OnStartTest" handlerEventName="OnStartTest" handlerRealIID="{F5856842-4323-49FD-B806-36E22179EF8A}" handlerRealDispID="1610743808" />
+			</config>
 			<testData />
 			<data />
 		</child>

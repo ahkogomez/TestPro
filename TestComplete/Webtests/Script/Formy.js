@@ -6,7 +6,7 @@
   }
   else {
     Log.Message("running in test complete")
-    var driver = DDT.CSVDriver("D:\\TestComplete\\Webtests\\testdata\\formy_testdata.csv");
+    var driver = DDT.CSVDriver("D:\\TestProScripts\\TestComplete\\Webtests\\testdata\\formy_testdata.csv");
   }
     
   var i = 0;

@@ -6,7 +6,7 @@
   }
   else {
     Log.Message("running in test complete")
-    var driver = DDT.CSVDriver("D:\\TestComplete\\Javascript_tests\\testdata_orders.csv");
+    var driver = DDT.CSVDriver("D:\\TestProScripts\\TestComplete\\Javascript_tests\\testdata_orders.csv");
   }
   
   let process = TestedApps.Orders.Run();

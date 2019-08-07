@@ -10,5 +10,6 @@
 		<child name="datadriver" key="{0B7037E0-38A9-497C-B2CA-561008A78AC6}" path="datadriver.js" />
 		<child name="EventControl1_OnStartTest" key="{8EEFE2C1-E858-4B39-9DBF-05E873AB404B}" path="EventControl1_OnStartTest.js" />
 		<child name="EventControl1_OnStopTest" key="{F9E71921-40BD-4A9A-B6E1-1D9BA3790854}" path="EventControl1_OnStopTest.js" />
+		<child name="VerifyPremiumGIO" key="{389611FD-92F6-439D-BD8E-400DFB976309}" path="VerifyPremiumGIO.js" />
 	</children>
 </Root>

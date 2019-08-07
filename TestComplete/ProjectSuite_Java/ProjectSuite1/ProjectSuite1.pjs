@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="14.0" key="{AF4E9FA8-1E9F-4FEE-B793-E67251D95F22}">
+	<children>
+		<child name="WebTests" key="{7B881D80-1146-4519-A216-5D4130E0C50E}" path="..\..\Webtests\WebTests.mds" />
+		<child name="DesktopApps" key="{39B7C3B0-63FB-4F67-9195-E16FF7BFA6E1}" path="..\..\Javascript_tests\DesktopApps\DesktopApps.mds" />
+		<child name="TeaShop" key="{1D18703F-AB36-44BC-8DFD-663AE6EC3F78}" path="..\..\Javascript_tests\TeaShop\TeaShop.mds" />
+		<child name="SampleStore" key="{A3D110B9-8EB6-405C-9FA0-068473A88493}" path="..\..\SampleStore\SampleStore.mds" />
+		<child name="FailedTest" key="{A42DAFE4-1258-430C-9002-AB437C98FE9C}" path="..\..\FailedTests\FailedTests\FailedTest\FailedTest.mds" />
+	</children>
+	<testItems key="{93AD529A-64C5-489D-9B15-AB7310A41FFD}">
+		<children>
+			<testItem key="{7B881D80-1146-4519-A216-5D4130E0C50E}" enabled="True" timeout="0" stopOnError="True" description="" />
+			<testItem key="{39B7C3B0-63FB-4F67-9195-E16FF7BFA6E1}" enabled="True" timeout="0" stopOnError="True" description="" />
+			<testItem key="{1D18703F-AB36-44BC-8DFD-663AE6EC3F78}" enabled="True" timeout="0" stopOnError="True" description="" />
+			<testItem key="{A3D110B9-8EB6-405C-9FA0-068473A88493}" enabled="True" timeout="0" stopOnError="True" description="" />
+			<testItem key="{A42DAFE4-1258-430C-9002-AB437C98FE9C}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{C864B16A-FDDA-431E-9594-3D14725B4CAE}">
+		<data Version="3" />
+	</variables>
+	<analysis key="{526D1888-A9EA-45EB-89FB-0A5104ADDAFA}" />
+	<scc key="{C900492B-D218-429C-9AA0-264B7D78CA88}" name="Git Plugin">
+		<data />
+	</scc>
+	<extender key="{1A3FC97E-9A66-4716-B166-35D10B4146E0}">
+		<CrossBrowserTesting Enable="True" />
+	</extender>
+</Root>
