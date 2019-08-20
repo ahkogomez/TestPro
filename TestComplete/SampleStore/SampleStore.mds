@@ -10,7 +10,7 @@
 	<config language="{90F89436-9452-4F95-9882-6B5210079F13}" />
 	<testItems key="{2A7FA33A-F49C-4ED8-A015-2E813C5E6559}" version="14">
 		<children>
-			<testItem name="Login Valid" key="{4FE6C58F-2EC2-422E-8416-497A76F332C7}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+			<testItem name="Login Valid" key="{4FE6C58F-2EC2-422E-8416-497A76F332C7}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 				<testParameters />
 				<children>
 					<testItem name="ProjectTestItem1" key="{BF44D606-F5E2-45EE-9356-4C07BEAFE885}" group="False" enabled="True" testMoniker="{BAB64136-5526-4652-8FD6-D75997B81B6C}OpenStore" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">

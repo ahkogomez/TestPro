@@ -5,24 +5,20 @@ var datafolder = "D:\\TestProScripts\\TestComplete\\SampleStore\\testdata\\"
 function TCValidLogin(){
   driver = datadriver.getData(datafolder+"validcred.xlsx", sheet="valid");
   //driver = datadriver.getData("D:\\TestComplete\\SampleStore\\testdata\\csv_validcred.csv");
-  common.OpenURL("firefox", "http://automationpractice.com");
-  let page = Sys.Browser("*").Page("*");
-  aqObject.CheckProperty(page.contentDocument, "title", cmpEqual, "My Store");
   while(!driver.EOF()){
+    
     InputCredentials(driver.Value("email"), driver.Value("password"));
     verifySuccess(driver.Value("accountname"));
     signOut();
     driver.Next();
+    
   }
 }
 
 function TCInvalidLogin(){
+  
   driver = datadriver.getData(datafolder+"invalidcreds.xlsx", sheet="Sheet1");
   //driver = datadriver.getData("D:\\TestComplete\\SampleStore\\testdata\\csv_invalidcreds.csv");
-  common.OpenURL("firefox", "http://automationpractice.com");
-   let page = Sys.Browser("*").Page("*");
-  aqObject.CheckProperty(page.contentDocument, "title", cmpEqual, "My Store");
-  
   while(!driver.EOF()){
     InputCredentials(driver.Value("email"), driver.Value("password"));
     verifyWrongCredentials(driver.Value("errortype"));
