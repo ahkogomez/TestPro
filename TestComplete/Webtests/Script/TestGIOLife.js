@@ -64,7 +64,13 @@ function getdata(filename){
 
 
 function OpenURL(url){
-  Browsers.Item(btFirefox).Run(url);
+  if(ProjectSuite.Variables.SUITE_BROWSER != null){
+    Browsers.Item(ProjectSuite.Variables.SUITE_BROWSER).Run(url);
+  }
+  else{
+    Browsers.Item(btFirefox).Run(url);
+  }
+  
 }
 
 
@@ -135,8 +141,15 @@ function FillForm(data){
   cursor[0].Click();
   cursor = page.EvaluateXPath("//div[@id='coverAmountDefinedButtons']//span[contains(text(),\"" + data.lifecover +"\")]");
   cursor[0].Click();
+  
+  aqUtils.Delay(100);
+  page = Sys.Browser("*").Page("*");
+  aqUtils.Delay(100);
   cursor = page.EvaluateXPath("//select[@id='topCoverAmount']");
+  Log.Message(data.coveramount);
+  cursor[0].Click();
   cursor[0].ClickItem(data.coveramount);
+  
   cursor = page.EvaluateXPath("//div[@id='familyDiscountButtons']//span[contains(text(),\"" + data.family +"\")]");
   cursor[0].Click();
   cursor = page.EvaluateXPath("//button[@id='getQuoteBtn']");

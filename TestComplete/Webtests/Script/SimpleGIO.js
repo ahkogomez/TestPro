@@ -14,7 +14,13 @@
 }
 
 function OpenURL(url){
-  Browsers.Item(btFirefox).Run(url);
+  if(ProjectSuite.Variables.SUITE_BROWSER != null){
+    Browsers.Item(ProjectSuite.Variables.SUITE_BROWSER).Run(url);
+  }
+  else{
+    Browsers.Item(btFirefox).Run(url);
+  }
+  
 }
 
 function readCSV(csvpath){

@@ -1,11 +1,18 @@
 ﻿var common = require("Common");
-var datadriver = require("datadriver")
+var datadriver = require("datadriver");
+
+if(ProjectSuite.Variables.SUITE_BROWSER != null){
+    var browser = ProjectSuite.Variables.SUITE_BROWSER;
+}
+else{
+    var browser = "firefox";
+}
 
 function NavigateShop(){
-  
-   driver = datadriver.getData("D:\\TestComplete\\Webtests\\testdata\\testdata_teashop.xlsx", sheet="tea");
+ 
+   driver = datadriver.getData("D:\\TestProScripts\\TestComplete\\Webtests\\testdata\\testdata_teashop.xlsx", sheet="tea");
    while (!driver.EOF()){
-      common.OpenURL("firefox","http://www.practiceselenium.com/");
+      common.OpenURL(browser,"http://www.practiceselenium.com/");
       var page = Sys.Browser("*").Page("*");
       page.NativeWebObject.Find("contentText", driver.Value("link"), "a").Click();
       aqUtils.Delay(500);

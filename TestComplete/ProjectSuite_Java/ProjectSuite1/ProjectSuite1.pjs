@@ -17,7 +17,13 @@
 		</children>
 	</testItems>
 	<variables key="{C864B16A-FDDA-431E-9594-3D14725B4CAE}">
-		<data Version="3" />
+		<data Version="3">
+			<Items>
+				<Variable Name="SUITE_BROWSER" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue StrValue="6300680072006F006D006500" />
+				</Variable>
+			</Items>
+		</data>
 	</variables>
 	<analysis key="{526D1888-A9EA-45EB-89FB-0A5104ADDAFA}" />
 	<scc key="{C900492B-D218-429C-9AA0-264B7D78CA88}" name="Git Plugin">

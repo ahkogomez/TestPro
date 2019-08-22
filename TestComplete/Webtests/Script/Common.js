@@ -5,8 +5,8 @@
     Browsers.Item(browser).Run(url);
   else
     Browsers.Item(browser).Navigate(url);
-   if(!IsMaximized( Sys.Browser("*").BrowserWindow(0)))
-      Sys.Browser("*").BrowserWindow(0).Maximize();
+   if(!IsMaximized(Sys.Browser(browser).BrowserWindow(0)))
+      Sys.Browser(browser).BrowserWindow(0).Maximize();
 }
 
 // Returns True if the specified Window is maximized; otherwise False.

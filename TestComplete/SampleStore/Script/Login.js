@@ -1,7 +1,12 @@
 ﻿var common = require("Common");
 var datadriver = require("DataDriver");
 var datafolder = "D:\\TestProScripts\\TestComplete\\SampleStore\\testdata\\"
-
+if(ProjectSuite.Variables.SUITE_BROWSER != null){
+    var browser = ProjectSuite.Variables.SUITE_BROWSER;
+}
+else{
+    var browser = "firefox";
+}
 function TCValidLogin(){
   driver = datadriver.getData(datafolder+"validcred.xlsx", sheet="valid");
   //driver = datadriver.getData("D:\\TestComplete\\SampleStore\\testdata\\csv_validcred.csv");
@@ -27,11 +32,12 @@ function TCInvalidLogin(){
 }
 
 function InputCredentials(email, password){
-  let page = Sys.Browser("firefox").Page("*");
+  let page = Sys.Browser(browser).Page("*");
+  Log.Message(page.contentDocument.title);
   page.NativeWebObject.Find("class", "login", "a").Click();
   
   aqUtils.Delay(3000);
-  page = Sys.Browser("firefox").Page("*");
+  page = Sys.Browser(browser).Page("*");
   Log.Message(page.contentDocument.title);
   aqObject.CheckProperty(page.contentDocument, "title", cmpContains, "Login - My Store");
   
@@ -47,7 +53,7 @@ function InputCredentials(email, password){
 function verifySuccess(accntname){
   
   aqUtils.Delay(3000);
-  var page = Sys.Browser("firefox").Page("*");
+  var page = Sys.Browser(browser).Page("*");
   Log.Message(page.contentDocument.title);
   aqObject.CheckProperty(page.contentDocument, "title", cmpContains, "My account - My Store");
   
@@ -60,14 +66,14 @@ function verifySuccess(accntname){
 }
 
 function signOut(){
-   var page = Sys.Browser("firefox").Page("*");
+   var page = Sys.Browser(browser).Page("*");
    page.NativeWebObject.Find("class", "logout", "a").Click();
    aqUtils.Delay(3000);
 }
 
 function verifyWrongCredentials(errortype){
   aqUtils.Delay(3000);
-  var page = Sys.Browser("firefox").Page("*");
+  var page = Sys.Browser(browser).Page("*");
 
   var alertbox = page.NativeWebObject.Find("class", "alert alert-danger", "div") 
   aqObject.CheckProperty(alertbox.FindChild("tagName", "p"), "contentText", cmpEqual , "There is 1 error");

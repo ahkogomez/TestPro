@@ -19,7 +19,7 @@ function IsMaximized(Window)
   
 function CloseBrowser(){
    aqUtils.Delay(1000);
-   Sys.Browser("firefox").Close();
+   Sys.Browser("*").Close();
    // Closes the driver
 }
 
