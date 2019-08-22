@@ -7,14 +7,14 @@ function FailandRecover(){
    
    while(!driver.EOF()){
       common.OpenURL(driver.Value("browser"), driver.Value("webpage"))
-      let page = Sys.Browser("*").Page("*");
+      let page = Sys.Browser(driver.Value("browser")).Page("*");
    
       //this line will fail
       aqObject.CheckProperty(page.contentDocument, "title", cmpContains, "Login - My Store");
     
       //this line should pass
       aqObject.CheckProperty(page.contentDocument, "title", cmpContains, driver.Value("title"));
-      common.CloseBrowser();
+      common.CloseBrowser(driver.Value("browser"));
       
       driver.Next();
    }

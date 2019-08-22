@@ -209,7 +209,14 @@ function checkquotes(quotes){
 }
 function CloseBrowser(){
    aqUtils.Delay(1000);
-   Sys.Browser("*").Close();
+   
+   if(ProjectSuite.Variables.SUITE_BROWSER != null){
+       Sys.Browser(ProjectSuite.Variables.SUITE_BROWSER).Close();
+  }
+  else{
+    Sys.Browser("*").Close();
+  }
+   
   
    // Closes the driver
 }

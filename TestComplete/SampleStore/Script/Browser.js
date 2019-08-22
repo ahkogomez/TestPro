@@ -15,5 +15,5 @@ function OpenStore(){
 }
 
 function CloseStore(){
-  common.CloseBrowser();
+  common.CloseBrowser(browser);
 }

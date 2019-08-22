@@ -21,7 +21,7 @@
         OpenURL(browser,"https://formy-project.herokuapp.com/form");
         fillup(processrow(driver));
         CheckSuccess();
-        CloseBrowser();
+        CloseBrowser(browser);
         
         i++;
         Log.PopLogFolder();
@@ -105,9 +105,9 @@ function CheckSuccess(){
  //   aqObject.CheckProperty(success, "innerText", cmpContains, "The form was successfully submitted!");
  // }
 }
-function CloseBrowser(){
+function CloseBrowser(browser){
    aqUtils.Delay(1000);
-   Sys.Browser("*").Close();
+   Sys.Browser(browser).Close();
    // Closes the driver
 }
 

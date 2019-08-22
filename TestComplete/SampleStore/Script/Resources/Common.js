@@ -17,9 +17,9 @@ function IsMaximized(Window)
     return (Window.WndStyles & WS_MAXIMIZED) == WS_MAXIMIZED;
 }
   
-function CloseBrowser(){
+function CloseBrowser(browser){
    aqUtils.Delay(1000);
-   Sys.Browser("*").Close();
+   Sys.Browser(browser).Close();
    // Closes the driver
 }
 

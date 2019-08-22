@@ -17,7 +17,7 @@ function NavigateShop(){
       page.NativeWebObject.Find("contentText", driver.Value("link"), "a").Click();
       aqUtils.Delay(500);
       aqObject.CheckProperty(page,"URL", cmpContains, driver.Value("linkurl"), CaseSensitive=false);
-      common.CloseBrowser();
+      common.CloseBrowser(browser);
       driver.Next();  
    }
   
