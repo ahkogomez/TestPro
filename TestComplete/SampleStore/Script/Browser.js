@@ -12,8 +12,17 @@ function OpenStore(){
   common.OpenURL(browser, "http://automationpractice.com");
   let page = Sys.Browser(browser).Page("*");
   aqObject.CheckProperty(page.contentDocument, "title", cmpEqual, "My Store");
+  
+  SetProjectBrowser(browser);
 }
 
 function CloseStore(){
   common.CloseBrowser(browser);
+}
+
+function SetProjectBrowser(browser){
+  if (!Project.Variables.VariableExists("PROJECT_BROWSER")) {
+          Project.Variables.AddVariable("PROJECT_BROWSER", "String");
+       }
+       Project.Variables.$set("VariableByName", "PROJECT_BROWSER", browser);
 }

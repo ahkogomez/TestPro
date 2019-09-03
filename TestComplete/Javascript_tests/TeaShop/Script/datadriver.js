@@ -1,4 +1,5 @@
-﻿function getData(file, sheet=""){
+﻿//driver = datadriver.getData("D:\\TestProScripts\\TestComplete\\Javascript_tests\\testdata\\testdata_teashop.csv");
+function getData(file, sheet=""){
   
   if(Project.Variables.Input != null){
     Log.Message("using command line argument");

@@ -2,8 +2,10 @@
 var datadriver = require("datadriver");
 
 function NavigateShop(){
-  
-   driver = datadriver.getData("D:\\TestComplete\\Javascript_tests\\testdata\\testdata_teashop.csv");
+   driver = datadriver.getData("D:\\TestProScripts\\TestComplete\\Javascript_tests\\testdata\\testdata_teashop.csv");
+// driver = DDT.ExcelDriver("D:/TestProScripts/TestComplete/Javascript_tests/testdata/testdata_teashop_xls.xls")
+// driver = DDT.ExcelDriver("D:/TestProScripts/TestComplete/Javascript_tests/testdata/testdata_teashop_xls.xls", "testdata_teashop");
+
    Log.Message(driver.Name);
    
    while (!driver.EOF()){
@@ -15,5 +17,6 @@ function NavigateShop(){
       common.CloseBrowser();
       driver.Next();
    }
+   Log.Warning("this is a TEST warning message");
   
 }

@@ -1,7 +1,7 @@
 ﻿
 function saveQuotes(){
-  driver = getdata("D:\\TestComplete\\Webtests\\testdata\\testdata.csv");
-  aqFileSystem.DeleteFile("D:\\TestComplete\\Webtests\\testdata\\GIOQuotes.csv");
+  driver = getdata("D:\\TestProScripts\\TestComplete\\Webtests\\testdata\\testdata_gio_1row.csv");
+  aqFileSystem.DeleteFile("D:\\TestProScripts\\TestComplete\\Webtests\\testdata\\GIOQuotes.csv");
   
   while (!driver.EOF())
   {    var data = processrow(driver);
@@ -18,7 +18,7 @@ function saveQuotes(){
 }
 
 function verifyquotes(){
-  driver = getdata("D:\\TestProScripts\\TestComplete\\Webtests\\testdata\\testdata.csv");
+  driver = getdata("D:\\TestProScripts\\TestComplete\\Webtests\\testdata\\testdata_gio_1row.csv");
   var quotes = DDT.CSVDriver("D:\\TestProScripts\\TestComplete\\Webtests\\testdata\\GIOQuotes.csv");
   while (!driver.EOF())
   {    var data = processrow(driver);
@@ -147,7 +147,7 @@ function FillForm(data){
   aqUtils.Delay(100);
   cursor = page.EvaluateXPath("//select[@id='topCoverAmount']");
   Log.Message(data.coveramount);
-  cursor[0].Click();
+  //cursor[0].Click();
   cursor[0].ClickItem(data.coveramount);
   
   cursor = page.EvaluateXPath("//div[@id='familyDiscountButtons']//span[contains(text(),\"" + data.family +"\")]");
@@ -160,7 +160,7 @@ function GetQuotesData(){
   var removeComma = function(str){
         return str.replace(/,/g, '').trim();
   }
-  var sPath = "D:\\TestComplete\\Javascript_tests\\testdata\\GIOQuotes.csv"
+  var sPath = "D:\\TestProScripts\\TestComplete\\Webtests\\testdata\\GIOQuotes.csv"
   
   if (!aqFile.Exists(sPath)){
       aqFile.Create(sPath);

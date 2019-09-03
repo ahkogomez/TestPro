@@ -40,7 +40,7 @@
 					</testItem>
 				</children>
 			</testItem>
-			<testItem name="Login Valid with data" key="{F5E6257E-12FF-4180-9444-865B5669B9C8}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+			<testItem name="Login Valid with data" key="{F5E6257E-12FF-4180-9444-865B5669B9C8}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 				<testParameters />
 				<children>
 					<testItem name="OpenStore" key="{D968F89C-F403-4DD4-B3F2-A10BC0FFCF46}" group="False" enabled="True" testMoniker="{BAB64136-5526-4652-8FD6-D75997B81B6C}OpenStore" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
@@ -77,7 +77,13 @@
 		</children>
 	</testItems>
 	<variables key="{B01DA5D4-BF24-4A17-B57C-7EF110DF6634}">
-		<data Version="3" />
+		<data Version="3">
+			<Items>
+				<Variable Name="PROJECT_BROWSER" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue />
+				</Variable>
+			</Items>
+		</data>
 	</variables>
 	<settings key="{6B29E806-9711-4B3E-97C3-FA8D84F471AF}">
 		<settingsVersion value="14.10" />

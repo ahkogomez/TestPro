@@ -10,10 +10,41 @@
 	</children>
 	<config language="{90F89436-9452-4F95-9882-6B5210079F13}" />
 	<testItems key="{B43DC475-523A-4319-A023-DCB465D45F23}" version="14">
-		<children />
+		<children>
+			<testItem name="Group1" key="{636D665D-AD5E-4EFB-AF29-3E01275B222A}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+				<testParameters />
+				<children>
+					<testItem name="ProjectTestItem1" key="{D1F1AAC7-9658-456A-B707-524337022F49}" group="False" enabled="True" testMoniker="{EDE914A3-BF59-4AB2-BE2E-69422DAFBF09}Test2" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem3" key="{60428274-7D45-4746-A716-E325EA8E0E71}" group="False" enabled="True" testMoniker="{BD654F4F-3093-4652-B39C-393151BE8C4B}OpenFile" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem2" key="{1E508C4C-82CD-4439-889F-D409480B78C1}" group="False" enabled="True" testMoniker="{6DA12454-F6C7-44C7-AED8-9A7D4FAFC10E}CloseNotepad" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+						<testParameters />
+						<children />
+					</testItem>
+				</children>
+			</testItem>
+		</children>
 	</testItems>
 	<variables key="{35BBA3E5-8088-4633-B15F-01B53BE6BE68}">
-		<data Version="3" />
+		<data Version="3">
+			<Items>
+				<Variable Name="KeywordVariables" Type="{8ECBD24A-6DA1-4476-A473-EE3A52F06A83}" Local="False">
+					<DefValue Kind="{CE6E0605-AE4F-45D5-8174-7C99555F214B}">
+						<ConnectionInfo FileName="..\..\testdata_orders.csv" UseOLEDB="False" Delimiters="," UniteDelimiters="False" HasColumnNames="True" TextQualifier="&quot;" />
+					</DefValue>
+				</Variable>
+				<Variable Name="Var1" Type="{8ECBD24A-6DA1-4476-A473-EE3A52F06A83}" Local="False">
+					<DefValue Kind="{CE6E0605-AE4F-45D5-8174-7C99555F214B}">
+						<ConnectionInfo FileName="..\testdata\notepad_data.csv" UseOLEDB="False" Delimiters="," UniteDelimiters="False" HasColumnNames="True" TextQualifier="&quot;" />
+					</DefValue>
+				</Variable>
+			</Items>
+		</data>
 	</variables>
 	<settings key="{02244D24-56F6-4FB6-A6F2-0F4F7E45F920}">
 		<settingsVersion value="14.10" />

@@ -2,12 +2,12 @@
 function AddToCart()
 {
   if(Project.Variables.Input != null){
-    Log.Message("using command line argument")
-    var driver = DDT.CSVDriver(Project.Variables.Input);
+    Log.Message("running in test complete")
+    var driver = DDT.CSVDriver("D:\\TestProScripts\\TestComplete\\Webtests\\testdata\\testdata_bigw.csv");
   }
   else {
-    Log.Message("running in test complete")
-    var driver = DDT.CSVDriver("D:\\TestComplete\\Webtests\\testdata\\testdata_bigw.csv");
+    Log.Message("using command line argument")
+    var driver = DDT.CSVDriver(Project.Variables.Input);
   }
   
  // browser = driver.Value("browser");

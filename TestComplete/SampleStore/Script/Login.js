@@ -1,8 +1,8 @@
 ﻿var common = require("Common");
 var datadriver = require("DataDriver");
 var datafolder = "D:\\TestProScripts\\TestComplete\\SampleStore\\testdata\\"
-if(ProjectSuite.Variables.SUITE_BROWSER != null){
-    var browser = ProjectSuite.Variables.SUITE_BROWSER;
+if(Project.Variables.PROJECT_BROWSER != null){
+    var browser = Project.Variables.PROJECT_BROWSER;
 }
 else{
     var browser = "firefox";
@@ -34,7 +34,7 @@ function TCInvalidLogin(){
 function InputCredentials(email, password){
   let page = Sys.Browser(browser).Page("*");
   Log.Message(page.contentDocument.title);
-  page.NativeWebObject.Find("class", "login", "a").Click();
+  page.NativeWebObject.Find("contentText", "Sign in", "a").Click();
   
   aqUtils.Delay(3000);
   page = Sys.Browser(browser).Page("*");
@@ -57,9 +57,10 @@ function verifySuccess(accntname){
   Log.Message(page.contentDocument.title);
   aqObject.CheckProperty(page.contentDocument, "title", cmpContains, "My account - My Store");
   
-  aqObject.CheckProperty(page.NativeWebObject.Find("class", "logout", "a") , "contentText", cmpContains, "Sign out");
+  aqObject.CheckProperty(page.NativeWebObject.Find("contentText", "Sign out", "a") , "Exists", cmpEqual, true);
   
-  accntnameobj = (page.NativeWebObject.Find("class", "account", "a")).FindChild("tagName", "span");
+ // accntnameobj = (page.NativeWebObject.Find("class", "account", "a")).FindChild("tagName", "span");
+  accntnameobj = (page.NativeWebObject.Find("title", "View my customer account", "a")).FindChild("tagName", "span");
   //accntname = "Anna Katrina Gomez" //user account name
   aqObject.CheckProperty(accntnameobj, "contentText", cmpContains, accntname);
   
@@ -67,7 +68,7 @@ function verifySuccess(accntname){
 
 function signOut(){
    var page = Sys.Browser(browser).Page("*");
-   page.NativeWebObject.Find("class", "logout", "a").Click();
+   page.NativeWebObject.Find("contentText", "Sign out", "a").Click();
    aqUtils.Delay(3000);
 }
 
@@ -75,7 +76,7 @@ function verifyWrongCredentials(errortype){
   aqUtils.Delay(3000);
   var page = Sys.Browser(browser).Page("*");
 
-  var alertbox = page.NativeWebObject.Find("class", "alert alert-danger", "div") 
+  var alertbox = page.NativeWebObject.Find("className", "alert alert-danger", "div") 
   aqObject.CheckProperty(alertbox.FindChild("tagName", "p"), "contentText", cmpEqual , "There is 1 error");
   errorstatement = {
     "no email":"An email address required.",

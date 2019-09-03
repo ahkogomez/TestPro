@@ -25,7 +25,7 @@
   
   CloseOrders(process);
   CloseCSV();
-  
+  Log.Warning()
 }
 
 function newOrder(process, driver){
@@ -43,11 +43,12 @@ function newOrder(process, driver){
   orderform.WinFormsObject("Date").set_Text(driver.Value("date"));
   orderform.WinFormsObject("Customer").set_Text(driver.Value("name"));
   orderform.WinFormsObject("Street").set_Text(driver.Value("street")); 
+  orderform.WinFormsObject("CardNo").set_Text(driver.Value("cardnum"));
   orderform.WinFormsObject("City").set_Text(driver.Value("city")); 
   orderform.WinFormsObject("State").set_Text(driver.Value("state"));
   orderform.WinFormsObject("Zip").set_Text(driver.Value("zip"));
   orderform.WinFormsObject(driver.Value("cardtype")).Click(); //Mastercard or AE
-  orderform.WinFormsObject("CardNo").set_Text(driver.Value("cardnum"));
+  //orderform.WinFormsObject("CardNo").set_Text(driver.Value("cardnum"));
   orderform.WinFormsObject("ExpDate").set_Text(driver.Value("expdate"));
   
   //check

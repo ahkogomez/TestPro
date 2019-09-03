@@ -1,12 +1,13 @@
 ﻿function main()
 {
-  if(Project.Variables.Input != null){
-    Log.Message("using command line argument")
-    var driver = DDT.CSVDriver(Project.Variables.Input);
+  if(Project.Variables.Input == null){
+    Log.Message("running in test complete")
+    var driver = DDT.ExcelDriver("D:\\TestProScripts\\TestComplete\\Webtests\\testdata\\formy_testdata.xls", "formy_testdata");
+   // var driver = DDT.CSVDriver("D:\\TestProScripts\\TestComplete\\Webtests\\testdata\\formy_testdata.csv");
   }
   else {
-    Log.Message("running in test complete")
-    var driver = DDT.CSVDriver("D:\\TestProScripts\\TestComplete\\Webtests\\testdata\\formy_testdata.csv");
+    Log.Message("using command line argument")
+    var driver = DDT.CSVDriver(Project.Variables.Input);
   }
     
   var i = 0;

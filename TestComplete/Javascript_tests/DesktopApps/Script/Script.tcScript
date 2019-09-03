@@ -6,5 +6,11 @@
 		<child name="Common" key="{112DBABA-57F7-470E-9BEE-A338D5B5EDD1}" path="..\..\TeaShop\Script\Common.js" />
 		<child name="datadriver" key="{6B6960A1-742E-4BAF-9EAB-FB2932B0A336}" path="..\..\TeaShop\Script\datadriver.js" />
 		<child name="Handler" key="{06F73989-A1F3-4D3D-94EB-91884C6E9CF7}" path="..\..\TeaShop\Script\Handler.js" />
+		<child name="OpenNotepad" key="{EDE914A3-BF59-4AB2-BE2E-69422DAFBF09}" path="OpenNotepad.js" />
+		<child name="CloseNotepad" key="{6DA12454-F6C7-44C7-AED8-9A7D4FAFC10E}" path="CloseNotepad.js" />
+		<child name="OpenFile" key="{BD654F4F-3093-4652-B39C-393151BE8C4B}" path="OpenFile.js" />
+		<child name="Unit1" key="{CE00A05C-78B5-49BD-B2D8-0D916AED815B}" path="Unit1.js" />
+		<child name="Unit2" key="{1A86A4DA-37E5-4BFB-9ED0-DFEF4B87D892}" path="Unit2.js" />
+		<child name="keywordtesthandler" key="{854BCE05-F35F-43DB-BD8B-9EB3F621C64F}" path="keywordtesthandler.js" />
 	</children>
 </Root>
