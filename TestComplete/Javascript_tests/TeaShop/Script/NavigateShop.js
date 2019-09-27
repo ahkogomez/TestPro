@@ -17,6 +17,6 @@ function NavigateShop(){
       common.CloseBrowser();
       driver.Next();
    }
-   Log.Warning("this is a TEST warning message");
+ //  Log.Warning("this is a TEST warning message");
   
 }

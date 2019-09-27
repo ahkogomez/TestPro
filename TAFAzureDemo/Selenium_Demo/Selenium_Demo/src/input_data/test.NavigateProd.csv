@@ -1,0 +1,8 @@
+test,NavigateProd,,
+CRWS.prod_navigate=TAFPro prod navigate tabs and sub-menu,,,
+Action,tabname,Common Keyword,Risk
+prod_navigate,Support,,
+prod_navigate,Products,,
+prod_navigate,Pricing,,
+prod_navigate,Support,,
+prod_navigate,Home,,

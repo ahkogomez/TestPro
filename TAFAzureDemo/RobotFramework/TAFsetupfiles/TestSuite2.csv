@@ -1,0 +1,11 @@
+TestSuite2,,,,,,
+PS Open Browser,,,,,,EOL
+TC Check Title of URL,,,,,,EOL
+OpenBrowser,,,,,,EOL
+tafpro links,BROWSER,TITLE,URL,Common Keyword,Risk,EOL
+,chrome,Test Automation Framework | Product Pricing | TAFPro,https://www.testingautomationframework.com/pricing/,pricing,,EOL
+,chrome,About TAFPro Test Automation Framework | TAFPro,https://www.testingautomationframework.com/about/,product,,EOL
+,chrome,Test Automation Framework | Software Testing | TestPro,https://www.testingautomationframework.com/,home,,EOL
+,chrome,Test Automation Framework | TAFPro FAQ | TAFPro,https://www.testingautomationframework.com/faqs/,support,,EOL
+,chrome,fail,https://www.testingautomationframework.com/faqs/,failed,,EOL
+,chrome,Test Automation Framework | TAFPro Support | TAFPro,https://www.testingautomationframework.com/support/,support,,EOL

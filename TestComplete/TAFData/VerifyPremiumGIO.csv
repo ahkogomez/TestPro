@@ -1,0 +1,13 @@
+Webtests,Script|VerifyPremiumGIO,,,,,,,,,,,,,,
+Webtests.verifyquotessingle=Action description automatically created by TestComplete Script registration process.,,,,,,,,,,,,,,,
+Action,dod,birthday,gender,smoking,lifecover,lifecoveramount,familydiscount,cover1,premium1,cover2,premium2,cover3,premium3,Common Keyword,Risk
+verifyquotessingle,Yes,12-Mar-91,Female,No,Yes,100000,No,"$100,000",$9.09,"$200,000",$16.37,"$300,000",$21.82,,
+verifyquotessingle,Yes,12-Mar-91,Female,No,Yes,200000,No,"$100,000",$9.09,"$200,000",$16.37,"$300,000",$21.82,,
+verifyquotessingle,Yes,12-Mar-91,Female,No,Yes,300000,No,"$200,000",$16.37,"$300,000",$21.82,"$400,000",$29.10,,
+verifyquotessingle,Yes,12-Mar-91,Female,No,Yes,400000,No,"$300,000",$21.82,"$400,000",$29.10,"$500,000",$36.37,,
+verifyquotessingle,Yes,12-Mar-91,Female,No,Yes,500000,No,"$400,000",$29.10,"$500,000",$36.37,"$600,000",$43.65,,
+verifyquotessingle,Yes,12-Mar-91,Male,No,Yes,100000,No,"$100,000",$11.71,"$200,000",$21.08,"$300,000",$28.11,,
+verifyquotessingle,Yes,12-Mar-91,Male,No,Yes,200000,No,"$100,000",$11.71,"$200,000",$21.08,"$300,000",$28.11,,
+verifyquotessingle,Yes,12-Mar-91,Male,No,Yes,300000,No,"$200,000",$21.08,"$300,000",$28.11,"$400,000",$37.48,,
+verifyquotessingle,Yes,12-Mar-91,Male,No,Yes,400000,No,"$300,000",$28.11,"$400,000",$37.48,"$500,000",$46.85,,
+verifyquotessingle,Yes,12-Mar-91,Male,No,Yes,500000,No,"$400,000",$37.48,"$500,000",$46.85,"$600,000",$56.22,,

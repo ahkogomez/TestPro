@@ -1,0 +1,8 @@
+D:\TestPro\UWSTesting\Scripts\SimpleTests\Tests\,OpenBrowserSimple,,,,
+TafRobotIntegration.OpenBrowserSimple=Action description automatically created by robot suite registration process.,,,,,
+Action,BROWSER,TITLE,URL,Common Keyword,Risk
+OpenBrowserSimple,chrome,Google,https://www.google.com/,,
+OpenBrowserSimple,chrome,YouTube,https://www.youtube.com/,,
+OpenBrowserSimple,chrome,Robot Framework,https://robotframework.org/,,
+OpenBrowserSimple,chrome,Test Automation Framework | Software Testing | TestPro,https://www.testingautomationframework.com/,,
+OpenBrowserSimple,chrome,Home | Western Sydney University,https://www.westernsydney.edu.au/,,

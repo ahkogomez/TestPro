@@ -1,0 +1,4 @@
+test,CRWS_WorkbookCreation_CounterParty,,,,,,,,,,,,,
+CRWS.WB_Creation_Counterparty=Workbook Creation for Counterparty,,,,,,,,,,,,,,
+Action,ActionName,Text_newEntryTermCombo_WBCreation,Text_newEntryCondCombog_WBCreation,Text_newEntrySearchField_WBCreation,ExpectedSearchOutcome_WBCreation,WorkbookAnalyst_WBCreation,ReviewType_WBCreation,Comments_WBCreation,Path_WBCreation,Filename_WBCreation,ExpectedColor_WBCreation,WorkbookFK_WBCreation,Common Keyword,Risk
+WB_Creation_Counterparty,WB_Creation_Counterparty,TAF Development Team,maturityDate: 2016-10-24,Event Date: 2016-10-21,date,,,,,,,,,

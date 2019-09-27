@@ -1,0 +1,9 @@
+test,Login,,,,
+Demo.tafdev_login=tafdev login page,,,,,
+Action,demo_username,demo_password,error,Common Keyword,Risk
+tafdev_login,ahkogomez,wrongpwd,wrong password,Password,
+tafdev_login,akgomez,sexyback,wrong username,Username,
+tafdev_login,akgomez,wrongpwd,wrong username and password,UandP,
+tafdev_login,{BLANK},sexyback,blank username,Username,
+tafdev_login,ahkogomez,{BLANK},blank password,Password,
+tafdev_login,{BLANK},{BLANK},blank both,UandP,

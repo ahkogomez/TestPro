@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20190926 10:48:22.087" rpa="false">
+<suite id="s1" name="RobotDemo" source="C:\Demo\RobotFramework\RobotDemo">
+<suite id="s1-s1" name="SimpleTests" source="C:\Demo\RobotFramework\RobotDemo\SimpleTests">
+<suite id="s1-s1-s1" name="Tests" source="C:\Demo\RobotFramework\RobotDemo\SimpleTests\Tests">
+<suite id="s1-s1-s1-s1" name="FillForm" source="C:\Demo\RobotFramework\RobotDemo\SimpleTests\Tests\FillForm.robot">
+<test id="s1-s1-s1-s1-t1" name="Submission Should be Successful with Valid Inputs">
+<kw name="Start Test" library="resources" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190926 10:48:22.370" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20190926 10:48:22.370" endtime="20190926 10:48:27.535"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>test started</arg>
+</arguments>
+<msg timestamp="20190926 10:48:27.539" level="INFO">test started</msg>
+<status status="PASS" starttime="20190926 10:48:27.536" endtime="20190926 10:48:27.539"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190926 10:48:27.539" endtime="20190926 10:48:31.660"></status>
+</kw>
+<status status="PASS" starttime="20190926 10:48:22.369" endtime="20190926 10:48:31.660"></status>
+</kw>
+<kw name="Make a Dictionary of Person">
+<assign>
+<var>&amp;{PERSON}</var>
+</assign>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<assign>
+<var>&amp;{PERSON}</var>
+</assign>
+<msg timestamp="20190926 10:48:31.661" level="INFO">&amp;{PERSON} = { }</msg>
+<status status="PASS" starttime="20190926 10:48:31.661" endtime="20190926 10:48:31.661"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${PERSON}</arg>
+<arg>firstname</arg>
+<arg>${firstname}</arg>
+</arguments>
+<status status="PASS" starttime="20190926 10:48:31.661" endtime="20190926 10:48:31.662"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${PERSON}</arg>
+<arg>lastname</arg>
+<arg>${lastname}</arg>
+</arguments>
+<status status="PASS" starttime="20190926 10:48:31.662" endtime="20190926 10:48:31.662"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${PERSON}</arg>
+<arg>job</arg>
+<arg>${job}</arg>
+</arguments>
+<status status="PASS" starttime="20190926 10:48:31.662" endtime="20190926 10:48:31.663"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${PERSON}</arg>
+<arg>educ</arg>
+<arg>${education}</arg>
+</arguments>
+<status status="PASS" starttime="20190926 10:48:31.663" endtime="20190926 10:48:31.663"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${PERSON}</arg>
+<arg>gender</arg>
+<arg>${gender}</arg>
+</arguments>
+<status status="PASS" starttime="20190926 10:48:31.663" endtime="20190926 10:48:31.664"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${PERSON}</arg>
+<arg>expi</arg>
+<arg>${experience}</arg>
+</arguments>
+<status status="PASS" starttime="20190926 10:48:31.664" endtime="20190926 10:48:31.664"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${PERSON}</arg>
+<arg>date</arg>
+<arg>${date}</arg>
+</arguments>
+<status status="PASS" starttime="20190926 10:48:31.664" endtime="20190926 10:48:31.665"></status>
+</kw>
+<msg timestamp="20190926 10:48:31.665" level="INFO">&amp;{PERSON} = { firstname=Ahko | lastname=Gomez | job=Developer | educ=high school | gender=female | expi=6 | date=12/02/2018 }</msg>
+<status status="PASS" starttime="20190926 10:48:31.660" endtime="20190926 10:48:31.665"></status>
+</kw>
+<kw name="Load Page" library="resources">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20190926 10:48:31.666" level="INFO">Opening url 'https://formy-project.herokuapp.com/form'</msg>
+<status status="PASS" starttime="20190926 10:48:31.666" endtime="20190926 10:48:33.606"></status>
+</kw>
+<status status="PASS" starttime="20190926 10:48:31.665" endtime="20190926 10:48:33.606"></status>
+</kw>
+<kw name="Fill Form" library="resources">
+<arguments>
+<arg>&amp;{PERSON}</arg>
+</arguments>
+<kw name="Type First Name" library="resources">
+<arguments>
+<arg>${fill.firstname}</arg>
+</arguments>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>Deprecated use `Press Keys` instead.</doc>
+<arguments>
+<arg>id:first-name</arg>
+<arg>${fname}</arg>
+</arguments>
+<status status="PASS" starttime="20190926 10:48:33.608" endtime="20190926 10:48:33.679"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20190926 10:48:34.182" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20190926 10:48:33.680" endtime="20190926 10:48:34.182"></status>
+</kw>
+<status status="PASS" starttime="20190926 10:48:33.607" endtime="20190926 10:48:34.182"></status>
+</kw>
+<kw name="Type Last Name" library="resources">
+<arguments>
+<arg>${fill.lastname}</arg>
+</arguments>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>Deprecated use `Press Keys` instead.</doc>
+<arguments>
+<arg>id:last-name</arg>
+<arg>${lname}</arg>
+</arguments>
+<status status="PASS" starttime="20190926 10:48:34.183" endtime="20190926 10:48:34.230"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20190926 10:48:34.733" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20190926 10:48:34.231" endtime="20190926 10:48:34.733"></status>
+</kw>
+<status status="PASS" starttime="20190926 10:48:34.182" endtime="20190926 10:48:34.733"></status>
+</kw>
+<kw name="Type Job" library="resources">
+<arguments>
+<arg>${fill.job}</arg>
+</arguments>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>Deprecated use `Press Keys` instead.</doc>
+<arguments>
+<arg>id:job-title</arg>
+<arg>${job}</arg>
+</arguments>
+<status status="PASS" starttime="20190926 10:48:34.734" endtime="20190926 10:48:34.785"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20190926 10:48:35.287" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20190926 10:48:34.786" endtime="20190926 10:48:35.288"></status>
+</kw>
+<status status="PASS" starttime="20190926 10:48:34.733" endtime="20190926 10:48:35.289"></status>
+</kw>
+<kw name="Select Education" library="resources">
+<arguments>
+<arg>${fill.educ}</arg>
+</arguments>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>high school=radio-button-1</arg>
+<arg>college=radio-button-2</arg>
+<arg>grad school=radio-button-3</arg>
+</arguments>
+<assign>
+<var>&amp;{education}</var>
+</assign>
+<msg timestamp="20190926 10:48:35.294" level="INFO">&amp;{education} = { high school=radio-button-1 | college=radio-button-2 | grad school=radio-button-3 }</msg>
+<status status="PASS" starttime="20190926 10:48:35.292" endtime="20190926 10:48:35.295"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id:&amp;{education}[${educ}]</arg>
+</arguments>
+<msg timestamp="20190926 10:48:35.296" level="INFO">Clicking element 'id:radio-button-1'.</msg>
+<status status="PASS" starttime="20190926 10:48:35.295" endtime="20190926 10:48:35.355"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20190926 10:48:35.858" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20190926 10:48:35.356" endtime="20190926 10:48:35.858"></status>
+</kw>
+<status status="PASS" starttime="20190926 10:48:35.290" endtime="20190926 10:48:35.858"></status>
+</kw>
+<kw name="Select Gender" library="resources">
+<arguments>
+<arg>${fill.gender}</arg>
+</arguments>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>male=checkbox-1</arg>
+<arg>female=checkbox-2</arg>
+<arg>none=checkbox-3</arg>
+</arguments>
+<assign>
+<var>&amp;{sex}</var>
+</assign>
+<msg timestamp="20190926 10:48:35.859" level="INFO">&amp;{sex} = { male=checkbox-1 | female=checkbox-2 | none=checkbox-3 }</msg>
+<status status="PASS" starttime="20190926 10:48:35.859" endtime="20190926 10:48:35.859"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id:${sex.${gender}}</arg>
+</arguments>
+<msg timestamp="20190926 10:48:35.860" level="INFO">Clicking element 'id:checkbox-2'.</msg>
+<status status="PASS" starttime="20190926 10:48:35.860" endtime="20190926 10:48:35.895"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20190926 10:48:36.396" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20190926 10:48:35.895" endtime="20190926 10:48:36.396"></status>
+</kw>
+<status status="PASS" starttime="20190926 10:48:35.858" endtime="20190926 10:48:36.396"></status>
+</kw>
+<kw name="Select Years of Experience" library="resources">
+<arguments>
+<arg>${fill.expi}</arg>
+</arguments>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${exp} &lt; 2</arg>
+<arg>select from list by value</arg>
+<arg>id:select-menu</arg>
+<arg>1</arg>
+<arg>ELSE IF</arg>
+<arg>${exp} &lt; 5</arg>
+<arg>select from list by value</arg>
+<arg>id:select-menu</arg>
+<arg>2</arg>
+<arg>ELSE IF</arg>
+<arg>${exp} &lt; 10</arg>
+<arg>select from list by value</arg>
+<arg>id:select-menu</arg>
+<arg>3</arg>
+<arg>ELSE</arg>
+<arg>select from list by value</arg>
+<arg>id:select-menu</arg>
+<arg>4</arg>
+</arguments>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>id:select-menu</arg>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20190926 10:48:36.399" level="INFO">Selecting options from selection list 'id:select-menu' by value 3.</msg>
+<status status="PASS" starttime="20190926 10:48:36.399" endtime="20190926 10:48:36.472"></status>
+</kw>
+<status status="PASS" starttime="20190926 10:48:36.398" endtime="20190926 10:48:36.473"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20190926 10:48:36.975" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20190926 10:48:36.473" endtime="20190926 10:48:36.975"></status>
+</kw>
+<status status="PASS" starttime="20190926 10:48:36.397" endtime="20190926 10:48:36.975"></status>
+</kw>
+<kw name="Pick Date" library="resources">
+<arguments>
+<arg>${fill.date}</arg>
+</arguments>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>Deprecated use `Press Keys` instead.</doc>
+<arguments>
+<arg>id:datepicker</arg>
+<arg>${date}</arg>
+</arguments>
+<status status="PASS" starttime="20190926 10:48:36.976" endtime="20190926 10:48:37.093"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20190926 10:48:37.595" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20190926 10:48:37.093" endtime="20190926 10:48:37.595"></status>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>Deprecated use `Press Keys` instead.</doc>
+<arguments>
+<arg>id:datepicker</arg>
+<arg>${\n}</arg>
+</arguments>
+<status status="PASS" starttime="20190926 10:48:37.596" endtime="20190926 10:48:37.628"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>0.5s</arg>
+</arguments>
+<msg timestamp="20190926 10:48:38.131" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20190926 10:48:37.628" endtime="20190926 10:48:38.131"></status>
+</kw>
+<status status="PASS" starttime="20190926 10:48:36.975" endtime="20190926 10:48:38.131"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20190926 10:48:41.133" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20190926 10:48:38.132" endtime="20190926 10:48:41.133"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>Submit</arg>
+</arguments>
+<msg timestamp="20190926 10:48:41.134" level="INFO">Clicking link 'Submit'.</msg>
+<status status="PASS" starttime="20190926 10:48:41.133" endtime="20190926 10:48:41.191"></status>
+</kw>
+<status status="PASS" starttime="20190926 10:48:33.606" endtime="20190926 10:48:41.191"></status>
+</kw>
+<kw name="Check Fill Successful" library="resources">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20190926 10:48:44.193" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20190926 10:48:41.192" endtime="20190926 10:48:44.194"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>The form was successfully submitted!</arg>
+</arguments>
+<msg timestamp="20190926 10:48:44.235" level="INFO">Current page contains text 'The form was successfully submitted!'.</msg>
+<status status="PASS" starttime="20190926 10:48:44.195" endtime="20190926 10:48:44.235"></status>
+</kw>
+<status status="PASS" starttime="20190926 10:48:41.191" endtime="20190926 10:48:44.236"></status>
+</kw>
+<kw name="End Test" library="resources" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190926 10:48:44.237" endtime="20190926 10:48:46.332"></status>
+</kw>
+<status status="PASS" starttime="20190926 10:48:44.236" endtime="20190926 10:48:46.333"></status>
+</kw>
+<tags>
+<tag>dictionaryonly</tag>
+</tags>
+<status status="PASS" starttime="20190926 10:48:22.369" endtime="20190926 10:48:46.334" critical="yes"></status>
+</test>
+<doc>This is a test to fill up a form
+it has 1 global dictionary (&amp;{PERSON})
+1 test case: Submission Should be Successful with Valid Inputs
+used robotframework 3.0.4
+this test passes
+this uses keywords under resources.robot</doc>
+<status status="PASS" starttime="20190926 10:48:22.175" endtime="20190926 10:48:46.336"></status>
+</suite>
+<status status="PASS" starttime="20190926 10:48:22.173" endtime="20190926 10:48:46.339"></status>
+</suite>
+<status status="PASS" starttime="20190926 10:48:22.172" endtime="20190926 10:48:46.340"></status>
+</suite>
+<status status="PASS" starttime="20190926 10:48:22.152" endtime="20190926 10:48:46.341"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">dictionaryonly</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="RobotDemo">RobotDemo</stat>
+<stat pass="1" fail="0" id="s1-s1" name="SimpleTests">RobotDemo.SimpleTests</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="Tests">RobotDemo.SimpleTests.Tests</stat>
+<stat pass="1" fail="0" id="s1-s1-s1-s1" name="FillForm">RobotDemo.SimpleTests.Tests.FillForm</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

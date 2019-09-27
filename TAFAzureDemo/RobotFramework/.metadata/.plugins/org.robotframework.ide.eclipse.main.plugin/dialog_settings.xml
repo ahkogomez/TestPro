@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.robotframework.ide.project.editor.activePage.RobotDemo">
+		<item key="activePage" value="GeneralProjectConfigurationEditorPart"/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./RobotDemo/GIO/Tests/GIO.robot">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./RobotDemo/GIO/Tests/quoteLifeProtect.robot">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./RobotDemo/SimpleTests/Tests/FillForm.robot">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./RobotDemo/SimpleTests/Tests/OpenBrowserSimple.robot">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./RobotDemo/SimpleTests/Tests/searchingoogle.robot">
+		<item key="activePage" value=""/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./RobotDemo/SimpleTests/Resources/resources.robot">
+		<item key="activePage" value=""/>
+	</section>
+</section>

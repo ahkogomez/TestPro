@@ -1,0 +1,6 @@
+TestSuite1
+"PS Search Ebay",,,,,,,,,,,,EOL
+"TC Open Webpage",,,,"TC Search Ebay",,,,,"TC Close Browser",,,EOL
+"start_browser",,,,"searchEbayAU",,,,,"close_browser",,,EOL
+"ebay website","webpage","Common Keyword","Risk","SearchEbayAU_Default","Brand","Product","Common Keyword","Risk","CloseBrowser_Default","Common Keyword","Risk",EOL
+,"https://www.ebay.com.au/","","",,"Samsung","Note 10","","",,"","",EOL

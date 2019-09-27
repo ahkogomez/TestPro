@@ -1,0 +1,33 @@
+*** Settings ***
+Documentation   This opens google.com and makes a google search
+...             it has 1 global scalar variable
+...             this will have 3 global scalar data (created in Variables)
+...             used robotframework 3.0.4
+...             this test passes
+Library     SeleniumLibrary
+
+*** Variables ***
+
+${FINDTHIS} =   taiko
+
+*** Test Cases ***
+Search This Item
+	${BROWSER} =  set variable  chrome
+    ${URL} =    set variable    https://www.google.com/
+    
+	${Path} =   set variable    D:\\Robot_Demo\\Screenshots
+    Set Screenshot Directory    ${Path}
+	
+	open browser   ${URL}    ${BROWSER}
+	
+    press keys      //input[@name='q']      ${FINDTHIS}\n
+	
+	sleep   5s
+  	set test message	${FINDTHIS}
+#    log     Warning Message: hello      WARN
+
+Close this Browser
+    Close browser
+
+*** Keywords ***
+

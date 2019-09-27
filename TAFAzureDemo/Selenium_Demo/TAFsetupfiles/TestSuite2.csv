@@ -1,0 +1,7 @@
+TestSuite2
+"PS Open Webpage",,,,,,,EOL
+"TC Open Webpage",,,,"TC Close Browser",,,EOL
+"start_browser",,,,"close_browser",,,EOL
+"random websites","webpage","Common Keyword","Risk","CloseBrowser_Default","Common Keyword","Risk",EOL
+,"https://robotframework.org/","","",,"","",EOL
+,"https://www.seleniumhq.org/","","",,,,EOL
